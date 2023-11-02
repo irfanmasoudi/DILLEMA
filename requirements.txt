@@ -1,0 +1,7 @@
+salesforce-lavis==1.0.2
+controlnet_aux==0.0.7
+diffusers[torch]==0.21.4
+ctransformers==0.2.27
+-e git+https://github.com/SysCV/shift-dev.git#egg=shift-dev
+appdirs
+pydantic==1.8.2
