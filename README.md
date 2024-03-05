@@ -63,3 +63,9 @@ Controlling the Diffusion Model with conditioning mechanism, spatial context and
 cd imagegen
 DILLEMA_imagegen_imagenet.py
 ```
+
+<img width="1051" alt="Screenshot 2023-12-13 at 20 10 12" src="https://github.com/irfanmasoudi/DILLEMA/assets/6355974/11c3489b-ae89-4baf-8357-120242bfed03">
+
+<img width="1012" alt="Screenshot 2023-12-13 at 17 58 08" src="https://github.com/irfanmasoudi/DILLEMA/assets/6355974/ad06aa18-7e70-4f4f-af24-dfe2891d2e08">
+
+
