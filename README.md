@@ -3,7 +3,7 @@
 
 DILLEMA: Diffusion Model and Large Language Model for Augmentation to perform counterfactual generation and data augmentation as the generated test cases for metamorphic testing. DILLEMA will have five-step processes from the input image to generate the image result.
 
-![DILLEMA Schema](figures/dillema_schema.png)
+![DILLEMA Schema](figures/dillema-schema.drawio.pdf)
 
 DILLEMA has 5 step processes:
 1. The input image will be described as text with an image captioning model, the result provides some sentences related to the input image that describe it as a caption.
