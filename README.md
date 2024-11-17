@@ -30,11 +30,12 @@ python3 downloadLLAMA.py
 
 ## Datasets
 1. ```SHIFT``` dataset is the Semantic Segmentation task example (synthetic dataset for autonomous driving).
-<img width="1440" alt="SHIFT Dataset" src="https://github.com/irfanmasoudi/thesis-source/assets/6355974/bcd036bf-f9bd-4ce5-a305-810b7b4aeeb7">
+<img width="1440" alt="shift" src="https://github.com/user-attachments/assets/7fb76382-25a6-4954-8646-760c395d6dc5">
 <br /><br />
 
-2. ```ImageNet1K``` is the example dataset for image classification which use used to train ResNet18, ResNet50, and ResNet152.
-<img width="1440" alt="image" src="https://github.com/irfanmasoudi/thesis-source/assets/6355974/53290b65-0e14-4d39-9caf-35e58aa45d1a">
+
+3. ```ImageNet1K``` is the example dataset for image classification which use used to train ResNet18, ResNet50, and ResNet152.
+<img width="1440" alt="imagenet" src="https://github.com/user-attachments/assets/5dfdefe6-778d-4607-a7ca-b354a63e4b04">
 <br /><br />
 
 ## Image Captioning
@@ -74,8 +75,7 @@ cd imagegen
 DILLEMA_imagegen_imagenet.py
 ```
 
-<img width="1051" alt="Screenshot 2023-12-13 at 20 10 12" src="https://github.com/irfanmasoudi/DILLEMA/assets/6355974/11c3489b-ae89-4baf-8357-120242bfed03">
+![dillema_example_new](https://github.com/user-attachments/assets/3cbd04f3-d163-4d36-bfaa-f4e59b8ebb38)
 
-<img width="1012" alt="Screenshot 2023-12-13 at 17 58 08" src="https://github.com/irfanmasoudi/DILLEMA/assets/6355974/ad06aa18-7e70-4f4f-af24-dfe2891d2e08">
 
 
