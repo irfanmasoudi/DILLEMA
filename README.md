@@ -1,16 +1,16 @@
 # DILLEMA
 
 
-DILLEMA: Diffusion Model and Large Language Model for Augmentation to perform counterfactual generation and data augmentation as the generated test cases for metamorphic testing. DILLEMA will have five-step processes from the input image to generate the image result.
+DILLEMA: Diffusion Model and Large Language Model for Augmentation, a framework that enhances the robustness of DL-based systems by generating diverse, realistic test images from existing datasets. DILLEMA leverages the recent advances in text and visual models to generate synthetic and accurate images to test DL-based systems in scenarios and conditions that can be not represented in the existing testing suite as data augmentation.
 
 ![DILLEMA Schema](figures/dillema-schema-new.png)
 
 DILLEMA has 5 step processes:
-1. The input image will be described as text with an image captioning model, the result provides some sentences related to the input image that describe it as a caption.
-2. The Large Language Model will take place in order to find several words that can be modified to correspond to the description of the caption without changing the task objective with the expected result as the list of Keywords
-3. Given the specific task, and the caption (the original text description of image input), the Large Language Model asked to identify the possible counterfactual words of the Keywords, with the expected result and specific format. 
-4. Change the Keywords with their alternatives into complete sentences that will describe the output of the image as a new caption. 
-5. Controlling Diffusion Model generates a new image, based on the original image and new caption.
+1. Image Captioning: the process of converting a given image into a detailed textual description.
+2. Keywords Identification: aims to identify which elements of the image can be safely modified without altering the overall meaning.
+3. Alternatives Identification: explore different possibilities for modifying the elements flagged in the previous step, such as changing the color of objects, adjusting environmental conditions (e.g., weather).
+4. Counterfactual Caption Generation: creating new textual descriptions, or counterfactual captions, by applying the alternatives generated in the previous step.
+5. Conterfactual Image Generation: generates a modified image based on the counterfactual caption.
 
 In the deployment, we decided to convert into 3 processes, image captioning, generating counterfactual, and image generation. Generating counterfactual actually combining step 2, 3, and 4. We do that for just the matter of computational resource efficiency.
 
@@ -27,6 +27,16 @@ Counterfactual generation need LLMs pretrained model, we use LLaMA-2. We use qua
 ```
 python3 downloadLLAMA.py
 ```
+
+## Datasets
+1. ```SHIFT``` dataset is the Semantic Segmentation task example (synthetic dataset for autonomous driving).
+<img width="1440" alt="SHIFT Dataset" src="https://github.com/irfanmasoudi/thesis-source/assets/6355974/bcd036bf-f9bd-4ce5-a305-810b7b4aeeb7">
+<br /><br />
+
+2. ```ImageNet1K``` is the example dataset for image classification which use used to train ResNet18, ResNet50, and ResNet152.
+<img width="1440" alt="image" src="https://github.com/irfanmasoudi/thesis-source/assets/6355974/53290b65-0e14-4d39-9caf-35e58aa45d1a">
+<br /><br />
+
 ## Image Captioning
 In the experiment we deployed ImageNet1K and SHIFT dataset. ```DILLEMA_captioning_imagenet.py``` for ImageNet1K and ```DILLEMA_captioning_shift.py```. The only different is in the dataset root path, captioning result folder path and the data loader.
 
