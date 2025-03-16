@@ -1,7 +1,10 @@
-# DILLEMA
+# DILLEMA: DILLEMA: Diffusion and Large Language Models for Multi-Modal Augmentation
 
+[Luciano Baresi](https://baresi.faculty.polimi.it/), [Davide Yi Xian Hu](https://dragonbanana.github.io/), [Muhammad Irfan Mas'udi](https://irfanmasoudi.github.io/), [Giovanni Quattrocchi](https://quattrocchi.faculty.polimi.it/#/)
 
-DILLEMA: Diffusion Model and Large Language Model for Augmentation, a framework that enhances the robustness of DL-based systems by generating diverse, realistic test images from existing datasets. DILLEMA leverages the recent advances in text and visual models to generate synthetic and accurate images to test DL-based systems in scenarios and conditions that can be not represented in the existing testing suite as data augmentation.
+[![arXiv](https://img.shields.io/badge/arXiv-2312.05251-00ff00.svg)](https://arxiv.org/abs/2502.04378)
+
+A framework that enhances the robustness of DL-based systems by generating diverse, realistic test images from existing datasets. DILLEMA leverages the recent advances in text and visual models to generate synthetic and accurate images to test DL-based systems in scenarios and conditions that can be not represented in the existing testing suite as data augmentation.
 
 ![DILLEMA Schema](figures/dillema-schema-new.png)
 
