@@ -1,4 +1,4 @@
-# DILLEMA: DILLEMA: Diffusion and Large Language Models for Multi-Modal Augmentation
+# DILLEMA: Diffusion and Large Language Models for Multi-Modal Augmentation
 
 [Luciano Baresi](https://baresi.faculty.polimi.it/), [Davide Yi Xian Hu](https://dragonbanana.github.io/), [Muhammad Irfan Mas'udi](https://irfanmasoudi.github.io/), [Giovanni Quattrocchi](https://quattrocchi.faculty.polimi.it/#/)
 
